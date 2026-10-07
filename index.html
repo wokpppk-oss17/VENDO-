@@ -58,3 +58,150 @@ header {
 
 .search input {
  
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search input:focus {
+  border-color: #16a05d;
+}
+
+.hero {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #16a05d;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.categories {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.products {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.product {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.price {
+  color: #16a05d;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.add {
+  background: #16a05d;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background: #222;
+  color: white;
+  text-align: center;
+}</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top">
+    <div class="logo">سوقنا</div>
+    <button class="cart">🛒 السلة</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="search">
+    <input type="text" placeholder="ابحث عن منتج...">
+  </div>
+
+  <section class="hero">
+    <h1>أهلاً بك في سوقنا 🛍️</h1>
+    <p>أفضل المنتجات بأسعار مناسبة</p>
+  </section>
+
+  <div class="categories">
+    <button class="category">الكل</button>
+    <button class="category">ملابس</button>
+    <button class="category">إلكترونيات</button>
+    <button class="category">منزل</button>
+  </div>
+
+  <section class="products">
+
+    <div class="product">
+      <h3>هاتف ذكي</h3>
+      <p>هاتف حديث ومميز</p>
+      <div class="price">250,000 د.ع</div>
+      <button class="add">أضف للسلة</button>
+    </div>
+
+    <div class="product">
+      <h3>سماعات</h3>
+      <p>صوت عالي الجودة</p>
+      <div class="price">35,000 د.ع</div>
+      <button class="add">أضف للسلة</button>
+    </div>
+
+    <div class="product">
+      <h3>ساعة ذكية</h3>
+      <p>تصميم أنيق ومميز</p>
+      <div class="price">75,000 د.ع</div>
+      <button class="add">أضف للسلة</button>
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+  سوقنا © 2026
+</footer>
+
+</body>
+</html>
